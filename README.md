@@ -1,3 +1,4 @@
-# hm-e
-An engine created within OpenGL (and other possible resources).
+# Hm Engine (hm-e)
+An engine created using OpenGL.
 Currently working on a release for Windows.
+Linux is planned.
