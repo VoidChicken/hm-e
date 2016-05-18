@@ -1,0 +1,2 @@
+﻿  main.cpp
+c:\users\shayan\documents\games\engines\hm-engine\hm-e\hme-core\main.cpp(12): error C3867: 'hme::graphics::ogl::OpenGLRenderer::Render': non-standard syntax; use '&' to create a pointer to member
