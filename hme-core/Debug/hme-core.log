@@ -1,2 +1,2 @@
-﻿  main.cpp
-c:\users\shayan\documents\games\engines\hm-engine\hm-e\hme-core\main.cpp(12): error C3867: 'hme::graphics::ogl::OpenGLRenderer::Render': non-standard syntax; use '&' to create a pointer to member
+﻿  hme-core.vcxproj -> C:\Users\Shayan\Documents\Games\Engines\Hm-engine\hm-e\Debug\hme-core.exe
+  hme-core.vcxproj -> C:\Users\Shayan\Documents\Games\Engines\Hm-engine\hm-e\Debug\hme-core.pdb (Partial PDB)

@@ -9,8 +9,7 @@ int main(int argc, char* argv) {
 	Window::Init();
 	
 	OpenGLRenderer* rdr = new OpenGLRenderer;
-	Window::RENDER_EVENT re = (*rdr).Render;
-	Window* win = new Window(1280, 720, "Hm Engine", re);
+	Window* win = new Window(1280, 720, "Hm Engine", rdr);
 	
 	while (!win->should_close()) {
 		win->update();

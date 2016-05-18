@@ -1,5 +1,4 @@
 #include "Window.h"
-
 #include <iostream>
 namespace hme {
 	namespace core {
@@ -10,25 +9,25 @@ namespace hme {
 				exit(-1);
 			}
 		}
-		Window::Window(int width, int height, char* title, RENDER_EVENT onRender) {
+		Window::Window(int width, int height, char* title, graphics::ogl::OpenGLRenderer* onRender) {
 			m_Width = width;
 			m_Height = height;
 			m_Title = title;
 			m_Window = glfwCreateWindow(width, height, title, NULL, NULL);
+			m_Renderer = onRender;
 			if (!m_Window) {
 				std::cerr << "Error : Couldn't init window" << std::endl;
 				glfwTerminate();
 				exit(-1);
 			}
 			glfwMakeContextCurrent(m_Window);
-			OnRender = onRender;
 		}
 		void Window::update()
 		{
 			
 			glfwGetWindowSize(m_Window, &m_Width, &m_Height);
 			glViewport(0, 0, m_Width, m_Height);
-			OnRender();
+			m_Renderer->renderCall();
 			glfwSwapBuffers(m_Window);
 			glfwPollEvents();
 		}
