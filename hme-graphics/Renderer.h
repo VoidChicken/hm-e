@@ -6,6 +6,7 @@ namespace hme {
 		protected:
 			 virtual void render() = 0;
 		public:
+			virtual void init() = 0;
 			void renderCall();
 		};
 	}

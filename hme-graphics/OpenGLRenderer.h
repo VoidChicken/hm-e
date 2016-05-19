@@ -6,6 +6,7 @@ namespace hme {
 			class OpenGLRenderer final : public Renderer {
 			protected:
 				virtual void render();
+				virtual void init();
 			};
 		}
 	}
