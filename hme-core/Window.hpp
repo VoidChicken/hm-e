@@ -1,6 +1,6 @@
 #pragma once
 #include <GLFW\glfw3.h>
-#include "OpenGLRenderer.h"
+#include "OpenGLRenderer.hpp"
 namespace hme {
 	namespace core {
 		class Window {

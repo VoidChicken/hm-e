@@ -5,6 +5,6 @@
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Window.h" />
+    <ClInclude Include="Window.hpp" />
   </ItemGroup>
 </Project>
